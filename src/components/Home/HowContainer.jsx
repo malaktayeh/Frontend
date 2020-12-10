@@ -8,10 +8,10 @@ export default function HowContainer() {
       <div className={styles['how-top-row']}>
         <div className={styles['how-top-left-col']}>
           <h1>
-            <u>How</u> OSC Works?
+            CodeTrophs Works?
           </h1>
           <p>
-            At OSC, the contributors can choose their level of difficulty and
+            At CodeTrophs, the contributors can choose their level of difficulty and
             also their field of expertise to start contributing accordingly, the
             amazing feature which saves your time and effort!
           </p>

@@ -8,10 +8,12 @@ import * as authFunctions from '../src/api/authFunctions';
 import { initGA, logPageView } from '../src/components/googleAnalytics';
 import '../src/scss/style.scss';
 import Spinner from '../src/components/Spinner';
+import ThemeContext from '../src/components/ThemeContext';
 import UserContext from '../src/components/UserContext';
 
 // eslint-disable-next-line react/prop-types
 function MyApp({ Component, pageProps }) {
+  const [Theme, setTheme] = useState('light');
   const [User, setUser] = useState(null);
   const [Loading, setLoading] = useState(true);
 
@@ -57,32 +59,38 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet"
         />
-        <title>OpenSourceCode</title>
+        <title>CodeTrophs</title>
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         />
       </Head>
 
-      <UserContext.Provider
+      <ThemeContext.Provider
         value={{
-          User,
-          setUser
+          Theme,
+          setTheme
         }}>
-        <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop
-          closeOnClick={false}
-          rtl={false}
-          pauseOnFocusLoss
-          draggable={false}
-          pauseOnHover
-        />
-        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-        <Component {...pageProps} />
-      </UserContext.Provider>
+        <UserContext.Provider
+          value={{
+            User,
+            setUser
+          }}>
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable={false}
+            pauseOnHover
+          />
+          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+          <Component {...pageProps} />
+        </UserContext.Provider>
+      </ThemeContext.Provider>
     </>
   );
 }

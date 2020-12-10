@@ -1,6 +1,8 @@
+@import 'variables';
+
 .header {
   padding: 0px 30px;
-  background-color: #f7f7f7;
+  background-color: var(--theme-background);
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -10,7 +12,7 @@
 
 .header-logo {
   position: relative;
-  width: 150px;
+  width: 250px;
   cursor: pointer;
 }
 

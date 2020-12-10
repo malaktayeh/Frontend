@@ -1,3 +1,21 @@
+@import 'variables';
+
+.dark {
+  --theme-background-darker: #{$bg-dark-grey};
+  --theme-color: #{$font-black};
+  --theme-color-diff: #{$font-white};
+  --theme-background: #{$bg-light-grey};
+}
+
+.light{
+  --theme-background: #{$bg-light};
+  --theme-color: #{$font-white};
+  --theme-color-diff: #{$font-black};
+  --theme-background-darker: #{$font-white};
+}
+
+/*    ****END THEME****    */
+
 * {
   padding: 0;
   margin: 0;

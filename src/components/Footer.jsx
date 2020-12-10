@@ -73,7 +73,7 @@ export default function Footer() {
           </li>
         </ul>
         <div className={styles['partner-logo']}>
-          <img src="SVG/footer-partner-logo.svg" alt="Powered by InCampus"/>
+          <img src="/logo/logo.png" alt="Powered by CodeTrophs"/>
         </div>
       </footer>
     </div>

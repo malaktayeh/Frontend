@@ -18,7 +18,7 @@
     "@types/react-transition-group": "^4.4.0",
     "axios": "^0.20.0",
     "jsonwebtoken": "^8.5.1",
-    "next": "^9.3.6",
+    "next": "^9.5.5",
     "npm-upgrade": "^2.0.4",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -29,7 +29,8 @@
     "react-responsive-carousel": "^3.2.9",
     "react-toastify": "^6.0.5",
     "react-toasty": "0.0.4",
-    "sass": "^1.26.7"
+    "sass": "^1.26.7",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",

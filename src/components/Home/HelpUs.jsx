@@ -5,7 +5,7 @@ import styles from '../../scss/home.module.scss';
 export default function HelpUs() {
   const donateClick = (e) => {
     e.preventDefault();
-    window.open('https://paytm.me/q5ZP-KI', '_blank');
+    window.open('#', '_blank');
     return null;
   };
   return (
