@@ -9,6 +9,8 @@
 
   .about-contents-container {
     align-self: flex-start;
+    margin-bottom: 100px;
+    margin-right: 20px;
     flex: 1;
 
     .about-heading-container {
@@ -46,7 +48,7 @@
 @media (max-width: 1440px) {
   .about-container {
     .about-decoration {
-      flex: 0.8;
+      flex: 1;
     }
   }
 }
@@ -54,6 +56,11 @@
 @media (max-width: 1024px) {
   .about-container {
     flex-direction: column;
+
+    .about-contents-container {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
 
     .about-decoration {
       margin-top: 10px;
@@ -73,6 +80,14 @@
 @media (max-width: 425px) {
   .about-container {
     padding: 40px 20px;
+
+    .about-contents-container {
+      .about-heading-container {
+        .about-heading-text {
+          font-size: 3.5rem;
+        }
+      }
+    }
     .about-decoration {
       max-width: 80%;
     }
