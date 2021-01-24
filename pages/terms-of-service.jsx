@@ -3,10 +3,10 @@ import React from 'react';
 import Header from '../src/components/Header';
 import Terms from '../src/components/Terms/index';
 
-const About = () => (
+const TermsOfService = () => (
   <div>
     <Header />
     <Terms />
   </div>
 );
-export default About;
+export default TermsOfService;
