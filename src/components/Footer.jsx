@@ -75,13 +75,18 @@ export default function Footer() {
         </ul>
         <div className="flex justify-content-center mt-l">
           <Link href="/terms-of-service">
-            <span className="mr-l">Terms of Service</span>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a className="mr-l">
+              Terms of Service
+            </a>
           </Link>
           <Link href="/about">
-            <span className="mr-l">About Us</span>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a className="mr-l">About Us</a>
           </Link>
           <Link href="/privacy-policy">
-            <span>Privacy Policy</span>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a>Privacy Policy</a>
           </Link>
         </div>
         <div className={styles['partner-logo']}>
