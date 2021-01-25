@@ -43,10 +43,6 @@
     flex: 0.5;
     height: auto;
   }
-
-  .term-decoration-container-mb {
-    display: none;
-  }
 }
 
 @media (max-width: 1440px) {
@@ -68,16 +64,6 @@
 
     .term-decoration {
       display: none;
-    }
-
-    .term-decoration-container-mb {
-      display: flex;
-      justify-content: space-between;
-
-      .term-decoration-mb {
-        max-width: 30%;
-        height: auto;
-      }
     }
   }
 }

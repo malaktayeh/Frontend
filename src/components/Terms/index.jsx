@@ -96,19 +96,6 @@ const Terms = () => {
         alt="Decorative"
         className={styles['term-decoration']}
       />
-
-      <div className={styles['term-decoration-container-mb']}>
-        <img
-          src="/images/term-decor-left.png"
-          alt="Decorative"
-          className={styles['term-decoration-mb']}
-        />
-        <img
-          src="/images/term-decor-right.png"
-          alt="Decorative"
-          className={styles['term-decoration-mb']}
-        />
-      </div>
     </div>
   );
 };

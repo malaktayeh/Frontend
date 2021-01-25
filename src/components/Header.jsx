@@ -6,7 +6,7 @@ import { logout } from '../api/authFunctions';
 import styles from '../scss/header.module.scss';
 import DrawerToggleButton from './SideDrawer/DrawerToggleButton';
 import SideDrawer from './SideDrawer/SideDrawer';
-import Button from './ThemeBtn';
+// import Button from './ThemeBtn';
 import ThemeContext from './ThemeContext';
 import ToTop from './ToTop';
 import UserContext from './UserContext';
@@ -44,7 +44,7 @@ export default function Header() {
       </div>
 
       {/* Theme Button  */}
-      <Button />
+      {/* <Button /> */}
       {router.pathname !== '/' &&
       router.pathname !== '/toporg' &&
       router.pathname !== '/toplang' ? (
@@ -120,7 +120,7 @@ export default function Header() {
                   ? User.profileImageUrl
                   : '/SVG/user.svg'
               }
-              onError={(e) => {
+              onError={e => {
                 e.target.onerror = null;
                 e.target.src = '/SVG/user.svg';
               }}
