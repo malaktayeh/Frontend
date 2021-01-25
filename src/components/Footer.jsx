@@ -59,7 +59,6 @@ export default function Footer() {
               Slack
             </a>
           </li>
-
           <li>
             <a href="https://github.com/OpenSouceCode/Frontend/tree/master/src/components">
               <img src="/SVG/pencil.svg" alt="pencil" />
