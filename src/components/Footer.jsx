@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 import styles from '../scss/footer.module.scss';
@@ -13,67 +14,83 @@ export default function Footer() {
         <h1 className={styles.heading}>
           {' '}
           Contact Us
-          <hr/>
+          <hr />
         </h1>
         <ul className={styles.badges}>
           {/* Dev.to */}
           <li>
             <a href="https://dev.to/_opensourcecode">
-              <img src="/SVG/dev_to.svg" alt="Dev.to"/>
+              <img src="/SVG/dev_to.svg" alt="Dev.to" />
               Dev.to
             </a>
           </li>
           {/* Discord */}
           <li>
             <a href="https://discord.gg/HYPt5RX">
-              <img src="/SVG/footer-discord.svg" alt="Discord"/>
+              <img src="/SVG/footer-discord.svg" alt="Discord" />
               Discord
             </a>
           </li>
           {/* Twitter */}
           <li>
             <a href="https://twitter.com/_opensourcecode">
-              <img src="/SVG/footer-twitter.svg" alt="Twitter"/>
+              <img src="/SVG/footer-twitter.svg" alt="Twitter" />
               Twitter
             </a>
           </li>
           {/* Github */}
           <li>
             <a href="https://github.com/OpenSouceCode">
-              <img src="/SVG/footer-github.svg" alt="Github"/>
+              <img src="/SVG/footer-github.svg" alt="Github" />
               Github
             </a>
           </li>
           {/* LinkedIn */}
           <li>
             <a href="https://www.linkedin.com/company/opensourcecode">
-              <img src="/SVG/footer-linkedin.svg" alt="LinkedIn"/>
+              <img src="/SVG/footer-linkedin.svg" alt="LinkedIn" />
               LinkedIn
             </a>
           </li>
           {/* Slack */}
           <li>
             <a href="https://join.slack.com/t/opensourcecode/shared_invite/zt-f0frpe9g-8fGLNGPA6HUQR~XuCoAJmg">
-              <img src="/SVG/footer-slack.svg" alt="Slack"/>
+              <img src="/SVG/footer-slack.svg" alt="Slack" />
               Slack
             </a>
           </li>
 
           <li>
             <a href="https://github.com/OpenSouceCode/Frontend/tree/master/src/components">
-              <img src="/SVG/pencil.svg" alt="pencil"/>
+              <img src="/SVG/pencil.svg" alt="pencil" />
               Edit this page
             </a>
           </li>
           <li>
             <a href="https://github.com/OpenSouceCode/Frontend">
-              <img src="/SVG/code.svg" alt="</>"/>
+              <img src="/SVG/code.svg" alt="</>" />
               View Source Code
             </a>
           </li>
         </ul>
+        <div className="flex justify-content-center mt-l">
+          <Link href="/terms-of-service">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a className="mr-l">
+              Terms of Service
+            </a>
+          </Link>
+          <Link href="/about">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a className="mr-l">About Us</a>
+          </Link>
+          <Link href="/privacy-policy">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a>Privacy Policy</a>
+          </Link>
+        </div>
         <div className={styles['partner-logo']}>
-          <img src="/logo/logo.png" alt="Powered by CodeTrophs"/>
+          <img src="/logo/logo.png" alt="Powered by CodeTrophs" />
         </div>
       </footer>
     </div>

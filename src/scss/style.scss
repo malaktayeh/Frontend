@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'utils';
 
 .dark {
   --theme-background-darker: #{$bg-dark-grey};
@@ -7,7 +8,7 @@
   --theme-background: #{$bg-light-grey};
 }
 
-.light{
+.light {
   --theme-background: #{$bg-light};
   --theme-color: #{$font-white};
   --theme-color-diff: #{$font-black};
