@@ -25,54 +25,49 @@
 }
 
 .welcome-container {
-  min-height: 80vh;
-  padding: 0 50px 50px 30px;
+  min-height: 100vh;
+  margin-bottom: 200px;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   flex-direction: row;
-  padding-top: 50px;
-  // background-image: url('/images/welcome-container-bg.png');
-  background-size: cover;
-  background-position-y: center;
   background-color: var(--theme-background-darker);
-  color: var(--theme-color-diff);
+  color: var(--theme-color);
 }
 
 .welcome-left {
-  max-width: 50%;
+  margin-left: 7vw;
+  max-width: 60%;
+}
+.welcome-left div {
+  display: flex;
 }
 
 .welcome-title {
-  font-weight: 650;
-  font-size: 2.80rem;
-  color: black;
-  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2.8rem;
+  padding: 10% 0 10% 2%;
 }
 
 .landing-text {
-  padding-top: 20px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: left;
-}
-
-.welcome-right {
-  max-width: 60%;
-  display: flex;
-  justify-content: center;
+  font-size: 2.0rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  
 }
 
 .welcome-right img {
-  max-width: 100%;
-  float: right;
+  position: absolute;
+  top: -55px;
+  left: 150px;
+  width: 88%;
+  height: 100vh;
 }
 
 .sign-in-buttons {
   padding-top: 30px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   flex-direction: row;
 }
 
@@ -123,8 +118,12 @@
 }
 
 .github-button {
-  background-color: black;
+  background-color: #ffaa1d;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  letter-spacing: 0.02em;
 }
 
 .google-button {
@@ -143,173 +142,145 @@
 /* ABOUT SECTION */
 
 .about-us-container {
-  // margin-top: -10px;
-  padding: 60px 20px;
-  display: flex;
-  background-color: #5356a5;
   color: var(--theme-color);
-  
-}
-
-.about-left-col {
-  max-width: 35%;
-}
-
-.about-left-col img {
-  max-width: 100%;
-  padding-left: 50px;
-}
-
-.about-right-col {
-  max-width: 60%;
+  max-width: 80%;
   text-align: justify;
-  margin: -30px auto 0 auto;
+  margin: -160px auto 0 auto;
 }
 
-.about-right-col h1 {
+.about-us-container h1 {
   font-weight: 800;
-  font-size: 3.75rem;
+  font-size: 4rem;
   margin-bottom: 30px;
+  letter-spacing: 0.02em;
 }
 
-.about-right-col p {
-  font-weight: 250;
-  font-size: 1.25rem;
+.about-us-text {
+  display: flex;
+  padding-left: 4vw;
+}
+
+.about-us-container p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.01em;
 }
 
 /* HOW OSC WORKS SECTION */
 
 .how-container {
-  margin-top: -5px;
-  padding: 10vh 50px 5vh 50px;
-  background: #5356a5;
+  margin: -5px auto 0 auto;
+  padding: 10vh 50px 5vh 0;
   color: var(--theme-color);
   text-align: justify;
-}
-
-.how-top-row {
-  display: flex;
-}
-
-.how-top-left-col {
-  max-width: 60%;
-}
-
-.how-top-left-col h1 {
-  font-weight: 800;
-  font-size: 3.75rem;
-  padding-bottom: 50px;
-}
-
-.how-top-left-col p {
-  text-align: justify;
-  font-weight: 250;
-  font-size: 1.25rem;
-}
-
-.how-top-right-col {
-  max-width: 40%;
-  display: flex;
-  justify-content: center;
-}
-
-.how-top-right-col img {
   max-width: 80%;
-  float: right;
 }
 
-.how-bottom-row {
-  padding: 80px 40px 60px 40px;
-  justify-content: space-evenly;
-  display: flex;
-  text-align: center;
+.how-container h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  padding-bottom: 50px;
+  letter-spacing: 0.02em;
 }
 
-.how-card {
-  max-width: 20%;
-  border-radius: 15%;
-  box-shadow: $box-shadow-light;
-  @include padding-all(40px, 20px, 40px, 20px);
-}
-
-.how-card-img-container {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  margin-bottom: 30px;
-}
-
-.how-card img {
-  max-width: 35px;
-}
-
-.how-card h3 {
+.how-container p {
+  font-weight: 400;
   font-size: 1.5rem;
-  color: #1583cc;
-  padding-bottom: 30px;
+  padding-left: 4vw;
+  letter-spacing: 0.01em;
+  padding-right: 5%;
 }
 
-.how-card p {
-  font-weight: 200;
-}
+// .how-bottom-row {
+//   padding: 80px 40px 60px 40px;
+//   justify-content: space-evenly;
+//   display: flex;
+//   text-align: center;
+// }
+
+// .how-card {
+//   max-width: 20%;
+//   border-radius: 15%;
+//   box-shadow: $box-shadow-light;
+//   @include padding-all(40px, 20px, 40px, 20px);
+// }
+
+// .how-card-img-container {
+//   display: inline-flex;
+//   justify-content: center;
+//   align-items: center;
+//   border-radius: 50%;
+//   height: 70px;
+//   width: 70px;
+//   margin-bottom: 30px;
+// }
+
+// .how-card img {
+//   max-width: 35px;
+// }
+
+// .how-card h3 {
+//   font-size: 1.5rem;
+//   color: #1583cc;
+//   padding-bottom: 30px;
+// }
+
+// .how-card p {
+//   font-weight: 200;
+// }
 
 /* Help Us Section  */
-.help-us-outer {
-  padding: 0;
-  background-color: var(--theme-background-darker);
-}
+
 .help-us-container {
-  padding: 60px 20px;
-  display: flex;
-  background-color: #5356a5;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  padding-top: 60px;
+  margin: 0 auto 10vh auto;
+
+  background-color: var(--theme-background-darker);
   color: var(--theme-color);
-}
-
-.help-us-left-col {
-  max-width: 35%;
-}
-
-.help-us-left-col img {
-  max-width: 100%;
-  padding-left: 50px;
-}
-
-.help-us-right-col {
-  max-width: 60%;
+  max-width: 80%;
   text-align: justify;
-  margin: -30px auto 0 auto;
 }
 
-.help-us-right-col h1 {
+// .help-us-container img {
+//   max-width: 100%;
+//   padding-left: 50px;
+// }
+
+.help-us-text {
+  text-align: justify;
+  margin: 0 auto 0 auto;
+  padding-left: 4vw;
+}
+
+.help-us-container h1 {
   font-weight: 800;
   font-size: 3.75rem;
   margin-bottom: 30px;
 }
 
-.help-us-right-col p {
-  width: 75%;
-  font-weight: 250;
-  font-size: 1.25rem;
+.help-us-text p {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.01em;
 }
 
 .donateButton {
   margin: 0.5rem auto;
   border-radius: 10rem;
-  padding: 0.5rem;
-  font-size: 1.25rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.5rem;
   border: none;
   color: #fff;
-  background: #55c2b4;
+  background: #ffaa1d;
+  box-shadow: 1px 1px 3px rgb(90, 90, 90);
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .donateButton:hover {
   cursor: pointer;
-  background: #5fcfc0;
+  background: #3f3f3f;
 }
 
 .donateButton:disabled {
@@ -403,7 +374,7 @@
   .sign-in-buttons {
     flex-direction: column;
     padding-left: 0;
-    margin-bottom:30px;
+    margin-bottom: 30px;
   }
 
   .email-section {

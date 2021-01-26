@@ -4,22 +4,13 @@ import styles from '../../scss/home.module.scss';
 
 export default function HowContainer() {
   return (
-    <div className={styles['how-container']}>
-      <div className={styles['how-top-row']}>
-        <div className={styles['how-top-left-col']}>
-          <h1>
-            CodeTrophs Works?
-          </h1>
-          <p>
-            At CodeTrophs, the contributors can choose their level of difficulty and
-            also their field of expertise to start contributing accordingly, the
-            amazing feature which saves your time and effort!
-          </p>
-        </div>
-        <div className={styles['how-top-right-col']}>
-          <img alt="how-right-SVG.png" src="/images/how-right-svg.svg" />
-        </div>
-      </div>
+    <div id="services" className={styles['how-container']}>
+      <h1>How CodeTrophs Works?</h1>
+      <p>
+        At CodeTrophs, the contributors can choose their level of difficulty and
+        also their field of expertise to start contributing accordingly, the
+        amazing feature which saves your time and effort!
+      </p>
       {/* <div className={styles['how-bottom-row']}>
         <div className={styles['how-card']}>
           <div

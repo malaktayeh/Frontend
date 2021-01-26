@@ -1,21 +1,80 @@
 @import 'variables';
 
 .footer {
-  background-color: #98eae080;
-  padding: {
-    right: 15px;
-    left: 15px;
-  }
+  background: url('/essential_SVG/footer_base.svg') center no-repeat;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  // padding: {
+  //   right: 15px;
+  //   left: 15px;
+  // }
+  // @media only screen and (min-width: 800px) {
 
-  @media only screen and (min-width: 800px) {
-    padding: {
-      right: 50px;
-      left: 50px;
+  // @media only screen and (min-width: 800px) {
+
+  // height: 20vh;
+  //   // padding: {
+  //   //   right: 50px;
+  //   //   left: 50px;
+  //   // }
+  // }
+}
+
+.menu {
+  width: 80%;
+  li {
+    margin-bottom: 2%;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: white;
     }
   }
 }
 
-.heading {
+.contact {
+  li {
+    list-style: none;
+    margin-bottom: 4%;
+    a {
+      text-decoration: none;
+      color: white;
+      padding-left: 4%;
+    }
+    span{
+      color: white;
+      padding-left: 4%;
+    }
+  }
+}
+
+.footer-list {
+  width: 60vw;
+  display: flex;
+  align-items: center;
+
+  // .menu {
+  //   padding-right: 50px;
+  // }
+  .contact {
+    width: 100%;
+  }
+}
+.socials {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  a {
+    padding-right: 5%;
+  }
+  // img {
+  //   width: 2.4rem;
+  //   height: 45px;
+  // }
+}
+.socials > .heading {
   font-size: 2.5rem;
   font-weight: 700;
   padding-left: 2.5rem;
