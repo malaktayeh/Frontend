@@ -18,19 +18,21 @@ export default function WelcomeComponent({ setLoading }) {
   return (
     <div id="welcome" className={styles['welcome-container']}>
       <div className={styles['welcome-left']}>
-        <div >
-          <img src='/essential_SVG/welcome_page_rectangle.svg' alt='vertical rectangle'/>
-        <h1 className={styles['welcome-title']}>
-          Explore the World of
-          <br/>
-          Open Sourcing
-        </h1>
+        <div>
+          <img
+            src="/essential_SVG/welcome_page_rectangle.svg"
+            alt="vertical rectangle"
+          />
+          <h1 className={styles['welcome-title']}>
+            Explore the World of
+            <br />
+            Open Sourcing
+          </h1>
         </div>
-       
+
         <p className={styles['landing-text']}>
-        &quot;CodeTrophs&quot; is an open source platform
-          targeted solely for beginners to help
-          them contribute to real life projects.{' '}
+          &quot;CodeTrophs&quot; is an open source platform targeted solely for
+          beginners to help them contribute to real life projects.{' '}
         </p>
 
         <div className={styles['sign-in-buttons']}>

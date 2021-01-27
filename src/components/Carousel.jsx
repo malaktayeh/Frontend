@@ -99,7 +99,9 @@ export default function Carousel({ data }) {
               <img src="SVG/right-arrow.svg" alt="Next" />
             </button>
           </div>
-          <img src={activeQuote.profileImage} alt="Profile" />
+          <div>
+            <img src={activeQuote.profileImage} alt="Profile" />
+          </div>
         </div>
       </div>
     </div>
@@ -128,8 +130,7 @@ Carousel.propTypes = {
   )
 };
 
-
-  /* <div className={styles['carousel-outer']}>
+/* <div className={styles['carousel-outer']}>
     <h1 className={styles.heading}>
       Our Past <span>Sponsors</span> and <span>Partners</span>{' '}
     </h1>
@@ -150,4 +151,3 @@ Carousel.propTypes = {
         })}
       </marquee>
     </div> */
-

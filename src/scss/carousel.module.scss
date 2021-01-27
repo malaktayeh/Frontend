@@ -52,7 +52,7 @@
   align-items: center;
   // justify-content: center;
   // flex-direction: column;
-  margin-top: -7.5px;
+  // margin-top: -7.5px;
   // padding: 15px 15px 40px 15px;
   // background-color: var(--theme-background-darker);
 }
@@ -208,48 +208,63 @@
 @media only screen and (max-width: 900px) {
   .carousel-outer {
     margin-top: -7.5px;
+    height: 50vh;
+    h1 {
+      font-size: 3.5rem;
+    }
   }
 
   .carousel-container {
-    width: 90%;
+    width: 100%;
   }
 
   .carousel-data {
-    height: 90%;
     p {
-      justify-content: center;
-      text-align: center;
-      padding: 0 5px;
+      
+      font-size: 1.2rem;
     }
   }
-  .carousel-inner {
-    padding: 10px 0;
-    height: 93%;
+  .arrow-buttons {
+    display: flex;
+    justify-content: space-around;
   }
-
-  .left-button {
-    left: calc(0% - 2rem);
-    img {
-      height: 4rem;
-      width: 4rem;
-    }
-  }
-
-  .right-button {
-    right: -2rem;
-    img {
-      height: 4rem;
-      width: 4rem;
-    }
-  }
+ 
 }
 
-@media only screen and (max-width: 449px) {
+@media only screen and (max-width: 560px) {
+  .carousel-outer {
+    margin: 0 auto 0 auto;
+    height: auto;
+  }
+
+  .carousel-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .carousel-inner-left {
+    max-width: 100%;
+    padding-bottom: 10px;
+    height: 2%;
+  }
   .carousel-data {
     padding: 0;
   }
-
-  .sponsors-div {
-    width: 90%;
+  .carousel-inner-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    padding-bottom: 20px;
+    // position: absolute;
+    height: 30%;
   }
+
+  .arrow-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  // .sponsors-div {
+  //   width: 90%;
+  // }
 }

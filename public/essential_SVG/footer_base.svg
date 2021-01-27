@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 629.344">
 
   <g id="Group_249" data-name="Group 249" transform="translate(0 -4752)">
-    <rect id="Rectangle_1" data-name="Rectangle 1" width="1920" height="626" transform="translate(0 4752)" fill="#0c314a"/>
+    <!-- <rect id="Rectangle_1" data-name="Rectangle 1"  transform="translate(0 4752)" fill="#0c314a"/> -->
     
     <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="12" cy="11.5" rx="12" ry="11.5" transform="translate(8 5131)" fill="#ffaa1d"/>
     <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="12" cy="11.5" rx="12" ry="11.5" transform="translate(8 5083)" fill="#ffaa1d"/>

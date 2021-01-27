@@ -3,6 +3,7 @@
 .footer {
   background: url('/essential_SVG/footer_base.svg') center no-repeat;
   background-size: cover;
+  background-color:#0c314a;
   height: 60vh;
   display: flex;
   justify-content: center;
@@ -43,7 +44,7 @@
       color: white;
       padding-left: 4%;
     }
-    span{
+    span {
       color: white;
       padding-left: 4%;
     }
@@ -87,64 +88,25 @@
   }
 }
 
-.badges {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: {
-    right: auto;
-    left: auto;
-  }
-  padding-top: 1rem;
-  list-style-type: none;
+@media only screen and (max-width: 800px) {
+  .footer {
+    min-width: 100vw;
+    height: 40vh;
 
-  @media only screen and (min-width: 800px) {
-    width: 75%;
   }
 }
 
-.badges img {
-  width: 1.3rem;
-  margin-right: 8px;
-  height: 25px;
-}
-
-.badges a {
-  display: flex;
-  background-color: #fff;
-  align-items: center;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 10px;
-  padding: 2px 5px;
-  margin: 8px 3px;
-  border: 2px solid #000;
-  text-decoration: none;
-  color: #000;
-
-  @media only screen and (min-width: 800px) {
-    margin: {
-      right: 20px;
-      left: 20px;
-    }
-    padding: {
-      right: 10px;
-      left: 10px;
-    }
-    font-weight: 500;
-    border-width: 3px;
+@media only screen and (max-width: 560px) {
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 50px;
   }
-}
-
-.partner-logo {
-  display: block;
-  margin: auto;
-  text-align: center;
-  padding: 25px 0;
-
-  img {
-    max-width: 250px;
-    max-height: 250px;
+  .menu {
+    padding-bottom: 20px;
+  }
+  .contact {
+    padding-bottom: 40px;
   }
 }

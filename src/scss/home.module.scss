@@ -49,11 +49,10 @@
 }
 
 .landing-text {
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   letter-spacing: 0.01em;
-  
 }
 
 .welcome-right img {
@@ -290,7 +289,28 @@
 /* Adding media querries */
 @media screen and (max-width: 560px) {
   .welcome-right {
-    max-width: 100% !important;
+    // max-width: 100% !important;
+    display: none;
+  }
+  .welcome-left {
+    position: absolute;
+    max-width: 100%;
+    max-height: 30vh;
+    top: 2vh;
+  }
+  .welcome-title {
+    width: 100vw;
+    text-align: left;
+  }
+  .landing-text {
+    width: 80vw;
+    text-align: justify;
+    padding-left: 30px;
+    margin-right: 0;
+  }
+
+  .github-button {
+    margin: 0 auto 0 auto;
   }
 }
 
@@ -350,25 +370,26 @@
     width: 100%;
     text-align: left;
     padding-top: 0;
-
     padding-left: 20px;
     padding-right: 20px;
     font-size: 2.2rem;
-    text-align: center;
   }
   .welcome-container {
-    flex-direction: column-reverse;
-    padding: 0 15px 0 15px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
+    min-height: 40vh;
+    padding-left: 15px;
   }
   .welcome-left {
-    max-width: 100%;
+    max-width: 50%;
+    margin-top: 160px;
+    height: 36vh;
   }
 
-  .welcome-right {
-    max-width: 60%;
+  .welcome-right img {
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    width: 80%;
+    height: 33vh;
   }
 
   .sign-in-buttons {
@@ -394,29 +415,22 @@
     text-align: center;
   }
 
-  .about-left-col {
-    padding-bottom: 50px;
+  // .about-left-col img {
+  //   padding-left: 0;
+  // }
 
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .about-left-col img {
-    padding-left: 0;
-  }
-
-  .about-right-col h1 {
+  .about-us-container > h1 {
     line-height: 60px;
     font-size: 3.5rem;
   }
 
-  .about-right-col p {
+  .about-us-text > p {
     text-align: justify;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .how-container {
-    padding: 20px 15px;
+    padding: 50px 0px;
   }
 
   .how-top-row {
@@ -430,60 +444,64 @@
     margin-right: auto;
   }
 
-  .how-top-left-col h1 {
+  .how-container > h1 {
     line-height: 50px;
     font-size: 3.5rem;
   }
 
-  .how-top-right-col {
-    margin-bottom: 50px;
+  .how-container > p{
+    font-size: 1.2rem;
+    text-align: justify;
+
   }
 
-  .how-bottom-row {
-    flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 50px;
-  }
+  // .how-top-right-col {
+  //   margin-bottom: 50px;
+  // }
 
-  .how-card {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 20px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  // .how-bottom-row {
+  //   flex-direction: column;
+  //   padding-left: 20px;
+  //   padding-right: 20px;
+  //   padding-top: 50px;
+  // }
+
+  // .how-card {
+  //   max-width: 100%;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   margin: 20px;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
 
   .help-us-container {
     flex-direction: column;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  }
+    }
   .help-us-container div {
     max-width: 100%;
     text-align: center;
   }
 
-  .help-us-left-col {
-    padding-bottom: 50px;
-
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .help-us-left-col img {
-    padding-left: 0;
-  }
-
-  .help-us-right-col h1 {
+  .help-us-container h1 {
     line-height: 60px;
     font-size: 3.5rem;
   }
 
-  .help-us-right-col p {
+  .help-us-text p {
     width: 100%;
     text-align: justify;
     font-size: 1.25rem;
   }
+  // .help-us-left-col {
+  //   padding-bottom: 50px;
+
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
+
+  // .help-us-left-col img {
+  //   padding-left: 0;
+  // }
+
 }
