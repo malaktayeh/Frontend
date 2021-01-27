@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 
 import styles from '../scss/footer.module.scss';
