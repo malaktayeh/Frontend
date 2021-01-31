@@ -62,7 +62,7 @@
   // margin: auto;
   // text-align: center;
   font-weight: 800;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--theme-color);
   // span {
   //   color: #32318a;
@@ -92,7 +92,7 @@
 
   p {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     letter-spacing: 0.01em;
     text-align: justify;
     // padding: 0 1rem;
@@ -210,7 +210,7 @@
     margin-top: -7.5px;
     height: 50vh;
     h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
   }
 
@@ -220,7 +220,6 @@
 
   .carousel-data {
     p {
-      
       font-size: 1.2rem;
     }
   }
@@ -228,7 +227,6 @@
     display: flex;
     justify-content: space-around;
   }
- 
 }
 
 @media only screen and (max-width: 560px) {

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 import styles from '../scss/footer.module.scss';
@@ -13,16 +14,22 @@ export default function Footer() {
         <div className={styles.menu}>
           <ul>
             <li>
-              <a href="#welcome">Get Started</a>
+              <Link href="/about">
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a>About Us</a>
+              </Link>
             </li>
             <li>
-              <a href="#about">About Us</a>
+              <Link href="/terms-of-service">
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a>Terms of Service</a>
+              </Link>
             </li>
             <li>
-              <a href="#services">Services</a>
-            </li>
-            <li>
-              <a href="#help">Help US</a>
+              <Link href="/privacy-policy">
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <a>Privacy policy</a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -92,69 +99,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-// <h1 className={styles.heading}>
-//   {' '}
-//   Contact Us
-//   <hr/>
-// </h1>
-// <ul className={styles.badges}>
-//   {/* Dev.to */}
-//   <li>
-//     <a href="https://dev.to/_opensourcecode">
-//       <img src="/SVG/dev_to.svg" alt="Dev.to"/>
-//       Dev.to
-//     </a>
-//   </li>
-//   {/* Discord */}
-//   <li>
-//     <a href="https://discord.gg/HYPt5RX">
-//       <img src="/SVG/footer-discord.svg" alt="Discord"/>
-//       Discord
-//     </a>
-//   </li>
-//   {/* Twitter */}
-//   <li>
-//     <a href="https://twitter.com/_opensourcecode">
-//       <img src="/SVG/footer-twitter.svg" alt="Twitter"/>
-//       Twitter
-//     </a>
-//   </li>
-//   {/* Github */}
-//   <li>
-//     <a href="https://github.com/OpenSouceCode">
-//       <img src="/SVG/footer-github.svg" alt="Github"/>
-//       Github
-//     </a>
-//   </li>
-//   {/* LinkedIn */}
-//   <li>
-//     <a href="https://www.linkedin.com/company/opensourcecode">
-//       <img src="/SVG/footer-linkedin.svg" alt="LinkedIn"/>
-//       LinkedIn
-//     </a>
-//   </li>
-//   {/* Slack */}
-//   <li>
-//     <a href="https://join.slack.com/t/opensourcecode/shared_invite/zt-f0frpe9g-8fGLNGPA6HUQR~XuCoAJmg">
-//       <img src="/SVG/footer-slack.svg" alt="Slack"/>
-//       Slack
-//     </a>
-//   </li>
-
-//   <li>
-//     <a href="https://github.com/OpenSouceCode/Frontend/tree/master/src/components">
-//       <img src="/SVG/pencil.svg" alt="pencil"/>
-//       Edit this page
-//     </a>
-//   </li>
-//   <li>
-//     <a href="https://github.com/OpenSouceCode/Frontend">
-//       <img src="/SVG/code.svg" alt="</>"/>
-//       View Source Code
-//     </a>
-//   </li>
-// </ul>
-// <div className={styles['partner-logo']}>
-//   <img src="/logo/logo.png" alt="Powered by CodeTrophs"/>
-// </div>
