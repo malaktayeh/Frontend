@@ -45,7 +45,8 @@ export default function Header() {
 
       {/* Theme Button  */}
       {/* <Button /> */}
-      {router.pathname !== '/' &&
+      {User &&
+      router.pathname !== '/' &&
       router.pathname !== '/toporg' &&
       router.pathname !== '/toplang' ? (
         <div className={styles.links}>
@@ -99,12 +100,13 @@ export default function Header() {
         </div>
       ) : null}
       <div tabIndex={0} role="button" onKeyDown={toggleSD} onClick={toggleSD}>
-        {router.pathname !== '/' && (
+        {User && router.pathname !== '/' && (
           <DrawerToggleButton className={styles['toggle-hamburger']} />
         )}
       </div>
       {sideDrawer && <SideDrawer handleClose={toggleSD} router={router} />}
-      {router.pathname !== '/' &&
+      {User &&
+      router.pathname !== '/' &&
       router.pathname !== '/toporg' &&
       router.pathname !== '/toplang' ? (
         <div className={styles.profile}>
