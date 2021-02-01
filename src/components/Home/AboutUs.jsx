@@ -5,7 +5,12 @@ import styles from '../../scss/home.module.scss';
 export default function AboutUs() {
   return (
     <div id="about" className={styles['about-us-container']}>
-      <h1>About CodeTrophs</h1>
+      <div className={styles['about-us-heading-container']}>
+        <div className={styles['about-us-heading-image']}>
+          <img src="/images/home/about-heading.svg" alt="Decorative" />
+        </div>
+        <h1 className={styles['about-us-heading-text']}>About CodeTrophs</h1>
+      </div>
       <div className={styles['about-us-text']}>
         <p>
           Does the idea of open source excite you but not sure where to begin or
@@ -16,9 +21,8 @@ export default function AboutUs() {
           to real life projects, from developing new ideas and approaches, to
           exploring the world of open sourcing. &#34;
         </p>
-        <img src="/essential_SVG/about_vertical.svg" alt="about_vertical" />
+        <img className={styles["about-us-text-vertical"]} src="/images/home/about-vertical.svg" alt="about_vertical" />
       </div>
     </div>
   );
 }
-

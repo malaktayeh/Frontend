@@ -8,10 +8,11 @@ export default function HelpUs() {
     window.open('#', '_blank');
     return null;
   };
+
   return (
     <div id="help" className={styles['help-us-container']}>
       {/* <img alt="help-us-left-svg" src="/essential_SVG/donate_hat.svg" /> */}
-      <h1>Help Us !!</h1>
+      <h1 className={styles['help-us-heading']}>Help Us !!</h1>
       <div className={styles['help-us-text']}>
         <p>
           Let&apos;s help the society with free Education. We are on a mission

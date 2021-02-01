@@ -58,15 +58,12 @@
 }
 
 .heading {
-  // display: block;
-  // margin: auto;
-  // text-align: center;
+  color: var(--theme-color);
+  padding-left: 20px;
   font-weight: 800;
   font-size: 3rem;
-  color: var(--theme-color);
-  // span {
-  //   color: #32318a;
-  // }
+  margin-bottom: 30px;
+  letter-spacing: 0.02em;
 }
 .carousel-inner-left {
   max-width: 60%;
@@ -205,34 +202,11 @@
   background-color: #a0021d;
 }
 
-@media only screen and (max-width: 900px) {
-  .carousel-outer {
-    margin-top: -7.5px;
-    height: 50vh;
-    h1 {
-      font-size: 3rem;
-    }
-  }
-
-  .carousel-container {
-    width: 100%;
-  }
-
-  .carousel-data {
-    p {
-      font-size: 1.2rem;
-    }
-  }
-  .arrow-buttons {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 1024px) {
   .carousel-outer {
     margin: 0 auto 0 auto;
     height: auto;
+    width: 90%;
   }
 
   .carousel-container {
@@ -265,4 +239,18 @@
   // .sponsors-div {
   //   width: 90%;
   // }
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-outer {
+    width: 95%;
+  }
+
+  .carousel-inner-left {
+    margin: 0 1rem;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
 }

@@ -1,30 +1,15 @@
 @import 'variables';
 
 .footer {
-  background: url('/essential_SVG/footer_base.svg') center no-repeat;
+  background: url('/images/home/footer.svg') bottom no-repeat;
   background-size: cover;
-  background-color:#0c314a;
-  height: 60vh;
+  background-color: #0c314a;
+  padding: 40px 0 220px 0;
   display: flex;
   justify-content: center;
-  // padding: {
-  //   right: 15px;
-  //   left: 15px;
-  // }
-  // @media only screen and (min-width: 800px) {
-
-  // @media only screen and (min-width: 800px) {
-
-  // height: 20vh;
-  //   // padding: {
-  //   //   right: 50px;
-  //   //   left: 50px;
-  //   // }
-  // }
 }
 
 .menu {
-  width: 80%;
   li {
     margin-bottom: 2%;
     list-style: none;
@@ -39,6 +24,7 @@
   li {
     list-style: none;
     margin-bottom: 4%;
+    display: flex;
     a {
       text-decoration: none;
       color: white;
@@ -55,17 +41,14 @@
   width: 60vw;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   // .menu {
   //   padding-right: 50px;
   // }
-  .contact {
-    width: 100%;
-  }
 }
 .socials {
   display: flex;
-  width: 100%;
   justify-content: center;
   a {
     padding-right: 5%;
@@ -88,18 +71,17 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .footer {
-    min-width: 100vw;
-    height: 40vh;
-
+@media only screen and (max-width: 1440px) {
+  .footer-list {
+    min-width: 80vw;
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 768px) {
   .footer-list {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     width: 80%;
     padding-top: 50px;
   }

@@ -21,8 +21,9 @@ export default function WelcomeComponent({ setLoading }) {
       <div className={styles['welcome-left']}>
         <div className={styles['welcome-title-container']}> 
           <img
-            src="/essential_SVG/welcome_page_rectangle.svg"
+            src="/images/home/welcome-rectangle.svg"
             alt="vertical rectangle"
+            className={styles['welcome-title-bar']}
           />
           <h1 className={styles['welcome-title']}>
             Explore the World of
@@ -31,8 +32,7 @@ export default function WelcomeComponent({ setLoading }) {
           </h1>
         </div>
 
-        <p className={styles['landing-text']}>
-          &quot;CodeTrophs&quot; is an open source platform targeted solely for
+        <p className={styles['landing-text']}> &quot;CodeTrophs&quot; is an open source platform targeted solely for
           beginners to help them contribute to real life projects.{' '}
         </p>
 
@@ -52,7 +52,7 @@ export default function WelcomeComponent({ setLoading }) {
       </div>
 
       <div className={styles['welcome-right']}>
-        <img alt="welcome page svg" src="/essential_SVG/welcome_page.svg" />
+        <img alt="welcome page svg" src="/images/home/welcome.svg" />
       </div>
     </div>
   );

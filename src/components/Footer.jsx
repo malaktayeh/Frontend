@@ -11,60 +11,56 @@ export default function Footer() {
     <footer className={styles.footer}>
       {/* Quick links  */}
       <div className={styles['footer-list']}>
-        <div className={styles.menu}>
-          <ul>
-            <li>
-              <Link href="/about">
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a>About Us</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/terms-of-service">
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a>Terms of Service</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/privacy-policy">
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a>Privacy policy</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <ul className={styles.menu}>
+          <li>
+            <Link href="/about">
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a>About Us</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/terms-of-service">
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a>Terms of Service</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/privacy-policy">
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+              <a>Privacy policy</a>
+            </Link>
+          </li>
+        </ul>
 
         {/* <img src='/essential_SVG/footer_base.svg' alt='codetrophs' /> */}
 
         {/* Contact us */}
-        <div className={styles.contact}>
-          <ul>
-            <li>
-              <i
-                className="fa fa-phone"
-                aria-hidden="true"
-                style={{ fontSize: '20px', color: 'white' }}
-              />
-              <a href="tel:+919876543223">+919876543223</a>
-            </li>
-            <li>
-              <i
-                className="fa fa-envelope"
-                aria-hidden="true"
-                style={{ fontSize: '20px', color: 'white' }}
-              />
-              <a href="mailto:codetrophs@gmail.com"> codetrophs@gmail.com</a>
-            </li>
-            <li>
-              <i
-                className="fa fa-map-marker"
-                aria-hidden="true"
-                style={{ fontSize: '20px', color: 'white' }}
-              />
-              <span> Palam, Delhi</span>
-            </li>
-          </ul>
-        </div>
+        <ul className={styles.contact}>
+          <li>
+            <i
+              className="fa fa-phone"
+              aria-hidden="true"
+              style={{ fontSize: '20px', color: 'white' }}
+            />
+            <a href="tel:+919876543223">+919876543223</a>
+          </li>
+          <li>
+            <i
+              className="fa fa-envelope"
+              aria-hidden="true"
+              style={{ fontSize: '20px', color: 'white' }}
+            />
+            <a href="mailto:codetrophs@gmail.com"> codetrophs@gmail.com</a>
+          </li>
+          <li>
+            <i
+              className="fa fa-map-marker"
+              aria-hidden="true"
+              style={{ fontSize: '20px', color: 'white' }}
+            />
+            <span> Palam, Delhi</span>
+          </li>
+        </ul>
         <div className={styles.socials}>
           {/* <a href="https://discord.gg/HYPt5RX">
             <img src="/SVG/footer-discord.svg" alt="Discord" />
