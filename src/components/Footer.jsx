@@ -62,28 +62,31 @@ export default function Footer() {
           </li>
         </ul>
         <div className={styles.socials}>
-          {/* <a href="https://discord.gg/HYPt5RX">
-            <img src="/SVG/footer-discord.svg" alt="Discord" />
-          </a>
-          <a href="https://dev.to/_opensourcecode">
-            <img src="/SVG/dev_to.svg" alt="Dev.to" />
-          </a> */}
-          <a href="https://twitter.com/_opensourcecode">
+          <a href="https://www.facebook.com/codetrophs">
             <i
-              className="fa fa-twitter-square"
+              className="fa fa-facebook-square"
               aria-hidden="true"
               style={{ fontSize: '36px', color: 'white' }}
             />
           </a>
 
-          <a href="https://github.com/OpenSouceCode">
+          <a href="https://www.instagram.com/codetrophs/">
+            <i
+              className="fa fa-instagram"
+              aria-hidden="true"
+              style={{ fontSize: '36px', color: 'white' }}
+            />
+          </a>
+
+          <a href="https://github.com/CodeTrophs">
             <i
               className="fa fa-github-square"
               aria-hidden="true"
               style={{ fontSize: '36px', color: 'white' }}
             />
           </a>
-          <a href="https://www.linkedin.com/company/opensourcecode">
+          
+          <a href="https://www.linkedin.com/company/codetrophs/">
             <i
               className="fa fa-linkedin-square"
               aria-hidden="true"
