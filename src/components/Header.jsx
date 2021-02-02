@@ -39,7 +39,7 @@ export default function Header() {
       <ToTop />
       <div>
         <Link href={User ? '/feed' : '/'}>
-          <img className={styles['header-logo']} src="/logo/logo.png" alt="" />
+          <img className={styles['header-logo']} src="/logo/codetrophs.png" alt="" />
         </Link>
       </div>
 
