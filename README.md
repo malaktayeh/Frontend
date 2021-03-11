@@ -1,5 +1,7 @@
 <div align="center">
 
+<p align="center"> <img src="./public/logo/codetrophs.png" alt="hello" width="100" /></p>
+
 # CodeTrophs
 
 Contributing to open source can be a rewarding way to learn, teach, and build experience in just about any skill you can imagine.
