@@ -21,6 +21,7 @@ Contributing to open source can be a rewarding way to learn, teach, and build ex
 
 ### Before You Start READ [Wiki](https://github.com/CodeTrophs/Frontend/wiki) Section
 ### Setup local .env [Watch](https://drive.google.com/file/d/1MRBFO7VbAzefD1Rsd125B5b8ao-snuhV/view?usp=sharing)
+### CodeTrophs UI Deisgn [Figma](https://www.figma.com/file/dzND8YXSRqhtAYYjEKSAm1/CodeTrophs)
 
 <br>
 
