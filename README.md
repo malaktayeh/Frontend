@@ -20,7 +20,7 @@ Contributing to open source can be a rewarding way to learn, teach, and build ex
 </div>
 
 ### Before You Start READ [Wiki](https://github.com/CodeTrophs/Frontend/wiki) Section
-### Setup local .env [Watch](https://drive.google.com/file/d/1MRBFO7VbAzefD1Rsd125B5b8ao-snuhV/view?usp=sharing)
+### Setup local .env [Watch](https://drive.google.com/file/d/1CmFT9JNH3bGEfbPOiZtL_BcWRvqAHmlH/view?usp=sharing)
 
 <br>
 
