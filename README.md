@@ -21,6 +21,7 @@ Contributing to open source can be a rewarding way to learn, teach, and build ex
 <br>
 
 ## 💡 Project Background
+
 <br>
 
 **CodeTrophs** is an open source platform targeted solely for beginners to help them contribute to real life projects, develop new ideas and to explore the world of open sourcing.
@@ -35,8 +36,8 @@ You can learn more about the project [here](https://github.com/CodeTrophs/Fronte
 
 <br>
 
+## 👨‍🏭 Areas of Collaboration
 
-## 👨‍🏭 Areas of Collaboration 
 <br>
 
 - Improving the UI elements and Page layouts with [figma design](https://www.figma.com/file/dzND8YXSRqhtAYYjEKSAm1/CodeTrophs?node-id=0%3A1).
@@ -45,15 +46,63 @@ You can learn more about the project [here](https://github.com/CodeTrophs/Fronte
 - Creating the required [Workflow](https://github.com/CodeTrophs/Frontend/wiki/Workflow-3-Months-Program).
 
 <hr>
+<br>
 
+## 🔧 Pre-Requisites
 
+- Nodejs.
+- Clone and setup the [backend](https://github.com/CodeTrophs/Backend/) repository.
+
+  <!-- <br> -->
+  <hr>
+
+<br>
+
+## 🔌 Getting Started
+
+<br>
+
+- Clone and cd into frontend repository.
+
+```shell
+git clone https://github.com/CodeTrophs/Frontend.git
+cd Frontend
+```
+
+- Install dependencies.
+
+```shell
+  npm install
+```
+
+- Create a `.env` file from `.env.example`
+
+```shell
+cp .env.example .env
+```
+
+- Edit the `.env` file and add the backend URL (By default this URL will be `http://localhost:8000`). You can leave the other env variables to default.
+
+```shell
+NEXT_PUBLIC_ADSENSE_CLIENT_ID=<ADSENSE_ID>
+NEXT_PUBLIC_BACKEND_BASE_URL=<BACKEND_URL>
+NEXT_PUBLIC_SECURE_TOKEN_ACCESS_KEY=<TOKEN>
+```
+
+- Run the frontend.
+
+```shell
+npm run dev
+```
+
+<hr>
 <br>
 
 ## 🚀 Quick start
+
 <br>
 
 You can Follow the process step by step from [here](https://drive.google.com/file/d/1CmFT9JNH3bGEfbPOiZtL_BcWRvqAHmlH/view?usp=sharing)
-
 
 ## **Here is our quickstart guide :**
 
@@ -63,24 +112,27 @@ You can Follow the process step by step from [here](https://drive.google.com/fil
 
 ```shell
  git clone https://github.com/CodeTrophs/Frontend.git
- ```
- **Install node dependencies**
- ```shell
-  cd codetrophs/frontend
-  npm install
-  ```
+```
+
+**Install node dependencies**
+
+```shell
+ cd codetrophs/frontend
+ npm install
+```
 
 **Start developing.**
 Navigate into your new site’s directory and start it up.
 
-   ```sh
-   npm run dev
-   ```
+```sh
+npm run dev
+```
+
 **Open the source code and start Contributing!**
 
 ---
 
-   Your site is now running at `http://localhost:3000`!
+Your site is now running at `http://localhost:3000`!
 
 Open the `codetrophs` directory in your code editor of choice and edit files under `src`. Save your changes and the browser will update in real time!
 
@@ -97,6 +149,7 @@ Open the `codetrophs` directory in your code editor of choice and edit files und
 5: Create a PR taking `development` branch as the `base` branch.
 
 ---
+
 <br>
 
 ## ❤️ Project Admin
