@@ -18,38 +18,121 @@ Contributing to open source can be a rewarding way to learn, teach, and build ex
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
 
 </div>
+<br>
 
-### Before You Start READ [Wiki](https://github.com/CodeTrophs/Frontend/wiki) Section
-### CodeTrophs UI Deisgn [Figma](https://www.figma.com/file/dzND8YXSRqhtAYYjEKSAm1/CodeTrophs)
-### Setup local .env [Watch](https://drive.google.com/file/d/1CmFT9JNH3bGEfbPOiZtL_BcWRvqAHmlH/view?usp=sharing)
-### [Workflow](https://github.com/CodeTrophs/Frontend/wiki/Workflow-3-Months-Program)
+## 💡 Project Background
 
+<br>
+
+**CodeTrophs** is an open source platform targeted solely for beginners to help them contribute to real life projects, develop new ideas and to explore the world of open sourcing.
+<br>
+<br>
+CodeTrophs provides an interactive user interface for beginners and aims at bridging the gap between students and research professors worldwide. Moreover, the platform plans on acting as a helping hand to individuals who are preparing for the coding interviews, providing them with real live interview experience.
+<br>
+
+You can learn more about the project [here](https://github.com/CodeTrophs/Frontend/wiki)
+
+---
+
+<br>
+
+## 👨‍🏭 Areas of Collaboration
+
+<br>
+
+- Improving the UI elements and Page layouts with [figma design](https://www.figma.com/file/dzND8YXSRqhtAYYjEKSAm1/CodeTrophs?node-id=0%3A1).
+- New Developement in the Frontend with ReactJS.
+- Adding **Admin Panel** and its features.
+- Creating the required [Workflow](https://github.com/CodeTrophs/Frontend/wiki/Workflow-3-Months-Program).
+
+<hr>
+<br>
+
+## 🔧 Pre-Requisites
+
+- Nodejs.
+- Clone and setup the [backend](https://github.com/CodeTrophs/Backend/) repository.
+
+  <!-- <br> -->
+  <hr>
+
+<br>
+
+## 🔌 Getting Started
+
+<br>
+
+- Clone and cd into frontend repository.
+
+```shell
+git clone https://github.com/CodeTrophs/Frontend.git
+cd Frontend
+```
+
+- Install dependencies.
+
+```shell
+  npm install
+```
+
+- Create a `.env` file from `.env.example`
+
+```shell
+cp .env.example .env
+```
+
+- Edit the `.env` file and add the backend URL (By default this URL will be `http://localhost:8000`). You can leave the other env variables to default.
+
+```shell
+NEXT_PUBLIC_ADSENSE_CLIENT_ID=<ADSENSE_ID>
+NEXT_PUBLIC_BACKEND_BASE_URL=<BACKEND_URL>
+NEXT_PUBLIC_SECURE_TOKEN_ACCESS_KEY=<TOKEN>
+```
+
+- Run the frontend.
+
+```shell
+npm run dev
+```
+
+<hr>
 <br>
 
 ## 🚀 Quick start
 
-### Here is our quickstart guide.
+<br>
+
+You can Follow the process step by step from [here](https://drive.google.com/file/d/1CmFT9JNH3bGEfbPOiZtL_BcWRvqAHmlH/view?usp=sharing)
+
+## **Here is our quickstart guide :**
+
+---
 
 **Fork & Clone the repo**
 
 ```shell
  git clone https://github.com/CodeTrophs/Frontend.git
- ```
- **Install node dependencies**
- ```shell
-  cd codetrophs/frontend
-  npm install
-  ```
+```
+
+**Install node dependencies**
+
+```shell
+ cd codetrophs/frontend
+ npm install
+```
 
 **Start developing.**
 Navigate into your new site’s directory and start it up.
 
-   ```sh
-   npm run dev
-   ```
-**Open the source code and start editing!**
+```sh
+npm run dev
+```
 
-   Your site is now running at `http://localhost:3000`!
+**Open the source code and start Contributing!**
+
+---
+
+Your site is now running at `http://localhost:3000`!
 
 Open the `codetrophs` directory in your code editor of choice and edit files under `src`. Save your changes and the browser will update in real time!
 
@@ -64,6 +147,10 @@ Open the `codetrophs` directory in your code editor of choice and edit files und
 4: Work on the new branch and push the code.
 
 5: Create a PR taking `development` branch as the `base` branch.
+
+---
+
+<br>
 
 ## ❤️ Project Admin
 
