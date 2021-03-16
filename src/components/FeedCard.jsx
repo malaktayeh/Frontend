@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 
 import { toast } from 'react-toastify';
 
 import styles from '../scss/card.module.scss';
 import { starRepo, unStarRepo, forkRepo } from '../services/feed';
 import LinearLoader from './LinearLoader';
+import UserContext from './UserContext';
 
 // eslint-disable-next-line
 export default function Card({ repo, isStarredProp }) {
@@ -14,6 +15,7 @@ export default function Card({ repo, isStarredProp }) {
   const [starring, setStarring] = useState(false);
   const [forking, setForking] = useState(false);
   const [isForked, setIsForked] = useState(false);
+  const { User } = useContext(UserContext)
   const changeStar = async (method, name) => {
     if (method === 'remove') {
       try {
@@ -99,7 +101,7 @@ export default function Card({ repo, isStarredProp }) {
                 {forking === false && (
                   <button className={styles['smallbox-below']}
                     type = "button"
-                    disabled = {!!isForked} 
+                    disabled = {isForked || User.name.replace(/\s+/g, '') === repo.full_name.split('/')[0]} 
                     onClick = {() => {
                       setForking(true);
                       fork(repo.full_name)
