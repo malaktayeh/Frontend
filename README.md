@@ -44,6 +44,7 @@ You can learn more about the project [here](https://github.com/CodeTrophs/Fronte
 - New Developement in the Frontend with ReactJS.
 - Adding **Admin Panel** and its features.
 - Creating the required [Workflow](https://github.com/CodeTrophs/Frontend/wiki/Workflow-3-Months-Program).
+- Download frontend assist [Drive](https://drive.google.com/drive/folders/1Zmbf2cjbSlUVIM_d4svqQZDzxs8GZ01O?usp=sharing)
 
 <hr>
 <br>
