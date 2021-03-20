@@ -101,7 +101,7 @@ export default function Card({ repo, isStarredProp }) {
                 {forking === false && (
                   <button className={styles['smallbox-below']}
                     type = "button"
-                    disabled = {isForked || User.name.replace(/\s+/g, '') === repo.full_name.split('/')[0]} 
+                    disabled = {isForked || (User && User.userName === repo.full_name.split('/')[0])} 
                     onClick = {() => {
                       setForking(true);
                       fork(repo.full_name)
