@@ -1,70 +1,30 @@
 import Link from 'next/link';
 import React from 'react';
-import styled from 'styled-components';
 
-const Ul = styled.ul`
-  list-style: none;
-  display: flex;
-  
-  li {
-    padding: 30px 35px;
-  }
-    a {
-      text-decoration: none;
-      color:black;
-    }
-    a:hover{
-      color: #ffaa1d;
-      
-    }
-  @media (max-width: 768px) {
-    flex-flow: column nowrap;
-    background-color: white;
-    position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    top: 0;
-    right: 0;
-    height: 120vh;
-    width: 300px;
-    padding-top: 3.7rem;
-    transition: transform 0.3s ease-in-out;
-    li {
-      color: #fff;
-    }
-    a {
-        text-decoration: none;
-        color:black;
-        font-size: 1.2rem;
-      }
-      a:hover{
-        color: #ffaa1d;
-      }
-  }
-`;
+import styles from '../../scss/RightNavbar.module.scss';
 
 const RightNavbar = ({ open }) => {
   
   return (
-    <Ul open={open}>
-      <li><Link href="/feed">
+    <ul className={`${styles.ul_div} ${open?styles.ul_open: styles.ul_close}`}>
+      <li className={styles.li_ul}><Link href="/feed">
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a>Home</a>
+      <a className={styles.a_li}>Home</a>
     </Link></li>
-    <li><Link href="/about">
+    <li className={styles.li_ul}><Link href="/about">
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-              <a>About Us</a>
+              <a className={styles.a_li}>About Us</a>
             </Link></li>
-      <li><Link href="/terms-of-service">
+      <li className={styles.li_ul}><Link href="/terms-of-service">
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a>Terms of Service</a>
+      <a className={styles.a_li}>Terms of Service</a>
     </Link></li>
-      <li><Link href="/privacy-policy">
+      <li className={styles.li_ul}><Link href="/privacy-policy">
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a>Privacy policy</a>
+      <a className={styles.a_li}>Privacy policy</a>
     </Link></li>
-      
-    
-    </Ul>
+    </ul>
+
   )
   
 }
