@@ -25,6 +25,8 @@
     list-style: none;
     margin-bottom: 4%;
     display: flex;
+    justify-content: center;
+
     a {
       text-decoration: none;
       color: white;
@@ -81,12 +83,13 @@
   .footer-list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 80%;
     padding-top: 50px;
+    align-items: center;
   }
   .menu {
     padding-bottom: 20px;
+    text-align: center;
   }
   .contact {
     padding-bottom: 40px;
