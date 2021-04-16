@@ -121,7 +121,6 @@
     padding: 0.25rem;
     height: 75px;
     width: 75px;
-    border-radius: 100px;
   }
 
   h4 {
@@ -141,6 +140,7 @@
   img {
     height: 16rem;
     width: 16rem;
+    border-radius: 50%;
   }
 }
 
@@ -156,6 +156,7 @@
 .arrow-buttons {
   display: flex;
   padding-bottom: 20px;
+  margin-left: 8vh;
 }
 
 .left-button {
