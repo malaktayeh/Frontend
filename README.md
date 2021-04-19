@@ -40,7 +40,7 @@ You can learn more about the project [here](https://github.com/CodeTrophs/Fronte
 
 <br>
 
-- Improving the UI elements and Page layouts with [figma design](https://www.figma.com/file/dzND8YXSRqhtAYYjEKSAm1/CodeTrophs?node-id=0%3A1).
+- Improving the UI elements and Page layouts with [Figma Design](https://www.figma.com/file/sngnb3JCjxsJpBd052pJQE/CodeTrophs-UI-Design?node-id=0%3A1).
 - New Developement in the Frontend with ReactJS.
 - Adding **Admin Panel** and its features.
 - Creating the required [Workflow](https://github.com/CodeTrophs/Frontend/wiki/Workflow-3-Months-Program).
