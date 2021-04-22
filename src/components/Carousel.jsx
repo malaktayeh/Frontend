@@ -85,21 +85,6 @@ export default function Carousel({ data }) {
         </div>
 
         <div className={styles['carousel-inner-right']}>
-          <div className={styles['arrow-buttons']}>
-            {' '}
-            <button
-              type="button"
-              onClick={goToPrevious}
-              className={styles['left-button']}>
-              <img src="SVG/left-arrow.svg" alt="Prev" />
-            </button>
-            <button
-              type="button"
-              onClick={goToNext}
-              className={styles['right-button']}>
-              <img src="SVG/right-arrow.svg" alt="Next" />
-            </button>
-          </div>
           <div>
             <img src={activeQuote.profileImage} alt="Profile" />
           </div>
