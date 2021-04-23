@@ -10,7 +10,7 @@ const Navbar = () => {
       <Link href='/feed'>
         <a>
           <div className={styles.logo}>
-            <img className= {styles['header-logo']} src="/logo/codetrophs.png" alt="" />
+            <img className= {styles['header-logo']} src="/logo/codetrophs.png" alt="codetrophs logo" />
           </div>
         </a>
       </Link>
