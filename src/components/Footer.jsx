@@ -9,7 +9,7 @@ export default function Footer() {
     //     ===========================================================================================
     <footer className={styles.footer}>
       {/* Quick links  */}
-      <h3 className={styles.heading}>Contact Us</h3>
+      <h1 className={styles.heading}>Contact Us</h1>
       <p className={styles.desc}>React out to us on Slack, Github or join in the chat room</p>
       <div className={styles.socials}>
       <div className={styles.blocks}>
@@ -28,9 +28,9 @@ export default function Footer() {
               aria-hidden="true"
               style={{ fontSize: '36px', color: 'white'}}/>
               <a href="https://www.linkedin.com/company/codetrophs/">LinkedIn</a>
-      
+
       </div>
-      
+
       </div>
       <div className={styles.blocks}>
       <div className={styles.links}>
@@ -40,7 +40,7 @@ export default function Footer() {
               style={{ fontSize: '36px', color: 'white'}}/>
               <a href="https://github.com/CodeTrophs">Github</a>
       </div>
-      
+
       </div>
       <div className={styles.blocks}>
       <div className={styles.links}>
@@ -50,11 +50,11 @@ export default function Footer() {
               style={{ fontSize: '36px', color: 'white'}}/>
               <a href="https://discord.gg/urV8vGk">Discord</a>
       </div>
-      
+
       </div>
-      
+
       </div>
-         
+
     </footer>
   );
 }

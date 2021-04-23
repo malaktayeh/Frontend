@@ -168,3 +168,16 @@ Open the `codetrophs` directory in your code editor of choice and edit files und
 		</td>
 	</tr>
 </table>
+
+
+## Contributors ✨
+
+<table>
+	 <tr>
+		 <td>
+        <a href="https://github.com/CodeTrophs/Frontend/graphs/contributors">
+        <img src="https://contrib.rocks/image?repo=CodeTrophs/Frontend" />
+      </a>
+		</td>
+  </tr>
+</table>

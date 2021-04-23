@@ -32,7 +32,7 @@ const ToTop = () => {
         type="button"
         onClick={scrollTop}
         style={{ display: showScroll ? 'block' : 'none' }}>
-        <i className={styles.top}></i>
+        <i className={styles.top} />
       </button>
     </div>
   );
