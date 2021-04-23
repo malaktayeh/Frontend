@@ -37,6 +37,15 @@
   justify-content: center;
   padding: 3px 15px 3px 4px;
   a {
+    padding-right: 5%;
+  }
+  i:hover {
+    transform: scale(1.05);
+  }
+  // img {
+  //   width: 2.4rem;
+  //   height: 45px;
+  // }
     color: white;
     text-decoration: none;
     padding: 0px 0px 0px 15px;
