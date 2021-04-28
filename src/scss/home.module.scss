@@ -125,6 +125,7 @@
 @media (max-width: 1440px) {
   .welcome-container {
     margin-bottom: 50px;
+    height: 50vh;
     .welcome-right {
       display: none;
     }
@@ -134,6 +135,7 @@
 @media (max-width: 1024px) {
   .welcome-container {
     padding: 0 40px;
+    height: 60vh;
   }
 }
 
