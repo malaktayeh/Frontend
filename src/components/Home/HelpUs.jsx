@@ -1,5 +1,5 @@
-import React from 'react';
 import Link from 'next/link';
+import React from 'react';
 
 import styles from '../../scss/home.module.scss';
 
@@ -14,7 +14,11 @@ export default function HelpUs() {
           Let&apos;s help the society with free Education. We are on a mission
           of teaching 1 Lakh students for free.
         </p>
-        <Link href="/DonateUs"><a className={styles.donateButton}>Donate Us</a></Link>
+        <Link href="/DonateUs" passHref>
+          <button className={styles.donateButton} type="submit">
+            Donate Us
+          </button>
+        </Link>
       </div>
     </div>
   );
