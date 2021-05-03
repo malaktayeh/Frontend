@@ -6,6 +6,7 @@
   background-color: #0c314a;
   padding: 10px 0 220px 0;
   justify-content: center;
+  margin-top: 5rem;
 }
 .heading{
   color: white;
@@ -45,7 +46,12 @@
       color:#ffaa1d;
     }
   }  
+
+
 @media (max-width: 800px) {
+  .footer {
+    margin-top: 2rem;
+  }
   .desc{
     padding:10px;
   }
@@ -70,10 +76,4 @@
       font-size: 1.2rem;
      }
 }
-}
-
-@media (max-width:1025px){
-  .footer{
-    margin-top: 5rem;
-  }
 }
