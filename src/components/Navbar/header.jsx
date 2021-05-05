@@ -4,15 +4,16 @@ import React, { useContext } from 'react';
 import { Navbar, Nav, Dropdown, Button } from 'react-bootstrap';
 
 import { logout } from '../../api/authFunctions';
+import styles from '../../scss/navbarNew.module.scss';
 import NavbarBasic from '../Nav/Navbar';
 import ToTop from '../ToTop';
 import UserContext from '../UserContext';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import RuleComponent from './rule';
 
 const NavbarComponent = () => {
   const router = useRouter();
   const { User, setUser } = useContext(UserContext);
-
 
   async function handleLogout(e) {
     e.preventDefault();
@@ -60,17 +61,7 @@ const NavbarComponent = () => {
                     FEED
                   </p>
                 </Link>
-                {router.pathname === '/feed' && (
-                  <hr
-                    className="mx-auto"
-                    style={{
-                      height: '1px',
-                      width: '50px',
-                      backgroundColor: '#fff',
-                      border: 'none'
-                    }}
-                  />
-                )}
+                <RuleComponent pathname="/feed" />
               </Nav.Link>
               <Nav.Link className="px-lg-5">
                 <Link
@@ -80,17 +71,7 @@ const NavbarComponent = () => {
                     ORGANIZATIONS
                   </p>
                 </Link>
-                {router.pathname === '/organizations' && (
-                  <hr
-                    className="mx-auto"
-                    style={{
-                      height: '1px',
-                      width: '50px',
-                      backgroundColor: '#fff',
-                      border: 'none'
-                    }}
-                  />
-                )}
+                <RuleComponent pathname="/organizations" />
               </Nav.Link>
               <Nav.Link className="px-lg-5">
                 <Link
@@ -100,17 +81,7 @@ const NavbarComponent = () => {
                     SAVED REPOSITORIES
                   </p>
                 </Link>
-                {router.pathname === '/saved' && (
-                  <hr
-                    className="mx-auto"
-                    style={{
-                      height: '1px',
-                      width: '50px',
-                      backgroundColor: '#fff',
-                      border: 'none'
-                    }}
-                  />
-                )}
+                <RuleComponent pathname="/saved" />
               </Nav.Link>
               <Nav.Link className="px-lg-5">
                 <Link
@@ -120,17 +91,7 @@ const NavbarComponent = () => {
                     STARRED REPOSITORIES
                   </p>
                 </Link>
-                {router.pathname === '/starred' && (
-                  <hr
-                    className="mx-auto"
-                    style={{
-                      height: '1px',
-                      width: '50px',
-                      backgroundColor: '#fff',
-                      border: 'none'
-                    }}
-                  />
-                )}
+                <RuleComponent pathname="/starred" />
               </Nav.Link>
             </Nav>
 
@@ -173,21 +134,21 @@ const NavbarComponent = () => {
               <Dropdown.Menu
                 style={{ left: '50%', transform: 'translateX(-50%)' }}
                 className="mt-2">
-                <Dropdown.Item href="#/action-1">
+                <Dropdown.Item className={styles["navitem-link"]} href="#/action-1">
                   <Link href="/profile">
                     <Button className="w-100" variant="success">
                       My Profile
                     </Button>
                   </Link>
                 </Dropdown.Item>
-                <Dropdown.Item href="#/action-2">
+                <Dropdown.Item className={styles["navitem-link"]} href="#/action-2">
                   <Link href="/setting">
                     <Button className="w-100" variant="outline-secondary">
                       Settings
                     </Button>
                   </Link>
                 </Dropdown.Item>
-                <Dropdown.Item href="#/action-3">
+                <Dropdown.Item className={styles["navitem-link"]} href="#/action-3">
                   <Button
                     className="w-100"
                     variant="danger"
