@@ -134,21 +134,21 @@ const NavbarComponent = () => {
               <Dropdown.Menu
                 style={{ left: '50%', transform: 'translateX(-50%)' }}
                 className="mt-2">
-                <Dropdown.Item className={styles["navitem-link"]} href="#/action-1">
+                <Dropdown.Item className={styles.navitemLink} href="#/action-1">
                   <Link href="/profile">
                     <Button className="w-100" variant="success">
                       My Profile
                     </Button>
                   </Link>
                 </Dropdown.Item>
-                <Dropdown.Item className={styles["navitem-link"]} href="#/action-2">
+                <Dropdown.Item className={styles.navitemLink} href="#/action-2">
                   <Link href="/setting">
                     <Button className="w-100" variant="outline-secondary">
                       Settings
                     </Button>
                   </Link>
                 </Dropdown.Item>
-                <Dropdown.Item className={styles["navitem-link"]} href="#/action-3">
+                <Dropdown.Item className={styles.navitemLink} href="#/action-3">
                   <Button
                     className="w-100"
                     variant="danger"
