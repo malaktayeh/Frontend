@@ -19,6 +19,7 @@
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@types/react-transition-group": "^4.4.0",
     "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
     "jsonwebtoken": "^8.5.1",
     "next": "^10.0.8",
     "npm-upgrade": "^3.0.0",
