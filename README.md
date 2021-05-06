@@ -158,7 +158,7 @@ Open the `codetrophs` directory in your code editor of choice and edit files und
 <p align="center">
  <a>
 
- [<img width="300" height="100" src="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png">](https://gssoc.girlscript.tech/)
+ [<img width=70% height=30% src="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png">](https://gssoc.girlscript.tech/)
  
 </p>
 
