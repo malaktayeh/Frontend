@@ -125,6 +125,7 @@
 @media (max-width: 1440px) {
   .welcome-container {
     margin-bottom: 50px;
+    min-height: 20vh;
     .welcome-right {
       display: none;
     }
@@ -134,12 +135,13 @@
 @media (max-width: 1024px) {
   .welcome-container {
     padding: 0 40px;
+    min-height: 25vh;
   }
 }
 
 @media (max-width: 768px) {
   .welcome-container {
-    min-height: 80vh;
+    min-height: 20vh;
     padding: 0 20px;
     .welcome-left {
       .welcome-title-container {
