@@ -20,7 +20,7 @@ export default function Footer() {
             Reach out to us on Slack, Github or join in the chat room
           </p>
           <div className="row w-100 mx-auto d-flex justify-content-center">
-            <div className="col-xs-3 px-md-4 px-sm-2 d-flex justify-content-center">
+            <div className="col-xs-3 px-md-4 px-2 d-flex justify-content-center">
               <div
                 style={{
                   height: '70px',
@@ -33,7 +33,7 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="col-xs-3 px-md-4 px-sm-2 d-flex justify-content-center">
+            <div className="col-xs-3 px-md-4 px-2 d-flex justify-content-center">
               <div
                 style={{
                   height: '70px',
@@ -46,7 +46,7 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className=" col-xs-3 px-md-4 px-sm-2 d-flex justify-content-center">
+            <div className=" col-xs-3 px-md-4 px-2 d-flex justify-content-center">
               <div
                 style={{
                   height: '70px',
@@ -59,7 +59,7 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className=" col-xs-3 px-md-4 px-sm-2 d-flex justify-content-center">
+            <div className=" col-xs-3 px-md-4 px-2 d-flex justify-content-center">
               <div
                 style={{
                   height: '70px',
