@@ -156,8 +156,6 @@ Open the `codetrophs` directory in your code editor of choice and edit files und
  ## Frontend is a part of these Open Source programs
 
 <p align="center">
- <a>
-
  [<img width=70% height=30% src="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png">](https://gssoc.girlscript.tech/)
  
 </p>
