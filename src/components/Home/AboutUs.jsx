@@ -22,6 +22,13 @@ export default function AboutUs() {
           exploring the world of open sourcing. &#34;
         </p>
         <img className={styles["about-us-text-vertical"]} src="/images/home/about-vertical.svg" alt="about_vertical" />
+        <div className={styles['icon-bar']}>
+        <a href="https://www.facebook.com/codetrophs" className={styles.facebook}><i aria-label="facebook" className="fa fa-facebook"/></a> 
+        <a href="https://github.com/CodeTrophs" className={styles.github}><i aria-label="github" className="fa fa-github"/></a> 
+        <a href="https://discord.gg/urV8vGk" className={styles.discord}><i aria-label="discord" className="fab fa-discord"/></a> 
+        <a href="https://www.linkedin.com/company/codetrophs/" className={styles.linkedin}><i aria-label="linkedin" className="fa fa-linkedin"/></a>
+       
+      </div>
       </div>
     </div>
   );
