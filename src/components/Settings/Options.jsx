@@ -80,11 +80,15 @@ const SettingsFinal = () => {
             </button>
           </div>
         </div>
-
         <div
           className={styles.boxes2}
           style={{ display: showAbout ? 'block' : 'none' }}>
-          <AboutYou UserData={LoggedInUser} />
+          <AboutYou
+            setShowAbout={setShowAbout}
+            setShowSocial={setShowSocial}
+            setCount={setCount}
+            UserData={LoggedInUser}
+          />
         </div>
         <div
           className={styles.boxes2}

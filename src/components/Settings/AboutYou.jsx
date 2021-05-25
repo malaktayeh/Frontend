@@ -7,7 +7,7 @@ import styles from '../../scss/settings.module.scss';
 import { updateProfile } from '../../services/user';
 import LinearLoader from '../LinearLoader';
 
-const AboutYou = ({ UserData }) => {
+const AboutYou = ({ UserData, setShowAbout, setShowSocial, setCount }) => {
   const [fullName, setFullName] = useState('');
   const [tag, setTag] = useState('');
   const [tags, setTags] = useState([]);
@@ -43,6 +43,12 @@ const AboutYou = ({ UserData }) => {
     else setAddSkillButtonDisabled(true);
   }, [skillError]);
 
+  const RedirectToSocialPage = () => {
+    setShowAbout(false);
+    setShowSocial(true);
+    setCount(2);
+  };
+
   async function handleFormSubmit(e) {
     e.preventDefault();
     setLoading(true);
@@ -54,13 +60,15 @@ const AboutYou = ({ UserData }) => {
     };
     try {
       const response = await updateProfile(data);
-      if (response.status === 200)
+      if (response.status === 200) {
         toast.success(
           <div>
             <img src="/icons/save-icon.svg" alt="save" /> About Information
             Updated Successfully{' '}
           </div>
         );
+        setTimeout(RedirectToSocialPage, 2000);
+      }
       setLoading(false);
     } catch (response) {
       if (response.status === 400) {
@@ -229,7 +237,7 @@ const AboutYou = ({ UserData }) => {
           className={styles.submitButton}
           onClick={handleFormSubmit}
           disabled={isDisabled}>
-          Save
+          Save & Next
         </button>
       )}
       {Loading && <LinearLoader />}
